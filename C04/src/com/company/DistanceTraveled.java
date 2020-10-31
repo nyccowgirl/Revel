@@ -24,6 +24,7 @@ traveled.
 import java.util.Scanner;
 
 public class DistanceTraveled {
+
     public static void main(String[] args) {
         int speed, time;
         Scanner input = new Scanner(System.in);
