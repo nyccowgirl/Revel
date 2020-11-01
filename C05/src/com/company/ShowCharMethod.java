@@ -12,7 +12,7 @@ program.
 
 import java.util.Scanner;
 
-public class showCharMethod {
+public class ShowCharMethod {
 
     public static void main(String[] args) {
         String string;
