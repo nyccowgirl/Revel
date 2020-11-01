@@ -1,7 +1,7 @@
 package com.company;
 
 /*
-SHOWCAR METHOD
+SHOWCHAR METHOD
 C05/PC01
 
 Write a method named showChar. The method should accept two arguments: a reference to a String object and an integer.
@@ -26,7 +26,23 @@ public class ShowCharMethod {
         showChar(string, index);
     }
 
+
+    /**
+     * The showChar method prints out the character at a specified index of a string.
+     * @param str String object
+     * @param i index number
+     */
+
     public static void showChar(String str, int i) {
         System.out.println(str.charAt(i));
     }
 }
+
+
+/*
+Enter a line of text: New York
+Enter your index: 2
+w
+
+Process finished with exit code 0
+ */

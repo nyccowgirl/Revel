@@ -41,6 +41,13 @@ public class TestAverageAndGrade {
 
     }
 
+
+    /**
+     * The determineGrade method returns the character for the equivalent grade based on the score.
+     * @param score Score provided by user
+     * @return Character for the letter grade
+     */
+
     public static char determineGrade(int score) {
         if (score >= 90) {
             return 'A';
@@ -55,6 +62,14 @@ public class TestAverageAndGrade {
         }
     }
 
+
+    /**
+     * The calcAverage method returns the average of five grades.
+     * @param array Array storing 5 scores
+     * @param size Size of the array
+     * @return Average score of the 5 scores provided
+     */
+
     public static double calcAverage(int[] array, int size) {
         int total = 0;
 
@@ -65,3 +80,21 @@ public class TestAverageAndGrade {
         return (double)total / size;
     }
 }
+
+
+/*
+Enter test grade for student 1: 55
+Enter test grade for student 2: 65
+Enter test grade for student 3: 75
+Enter test grade for student 4: 85
+Enter test grade for student 5: 95
+The letter grades are as follows:
+Student 1: F
+Student 2: D
+Student 3: C
+Student 4: B
+Student 5: A
+The average grade was: 75.00
+
+Process finished with exit code 0
+ */
