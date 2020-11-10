@@ -43,6 +43,13 @@ public class Employee {
         position = "";
     }
 
+    Employee(String inName, int inNum) {
+        name = inName;
+        idNumber = inNum;
+        department = "";
+        position = "";
+    }
+
     Employee(String inName, int inNum, String inDept, String inPosition) {
         name = inName;
         idNumber = inNum;
@@ -50,5 +57,58 @@ public class Employee {
         position = inPosition;
     }
 
+    public void setName(String inName) {
+        name = inName;
+    }
 
+    public void setIdNumber(int inNum) {
+        idNumber = inNum;
+    }
+
+    public void setDepartment(String inDept) {
+        department = inDept;
+    }
+
+    public void setPosition(String inPosition) {
+        position = inPosition;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getIdNumber() {
+        return idNumber;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public static void main(String[] args) {
+        Employee emp1 = new Employee("Susan Meyers", 47899, "Accounting", "Vice President");
+        Employee emp2 = new Employee("Mark Jones", 39119, "IT", "Programmer");
+        Employee emp3 = new Employee("Joy Rogers", 81774, "Manufacturing", "Engineer");
+
+        System.out.println("Employee\t\tID Number\tDepartment\t\tPosition");
+        System.out.print(emp1.getName() + "\t" + emp1.getIdNumber() + "\t\t" + emp1.getDepartment() + "\t\t");
+        System.out.println(emp1.getPosition());
+        System.out.print(emp2.getName() + "\t\t" + emp2.getIdNumber() + "\t\t" + emp2.getDepartment() + "\t\t\t\t");
+        System.out.println(emp2.getPosition());
+        System.out.print(emp3.getName() + "\t\t" + emp3.getIdNumber() + "\t\t" + emp3.getDepartment() + "\t");
+        System.out.println(emp3.getPosition());
+    }
 }
+
+/*
+Employee		ID Number	Department		Position
+Susan Meyers	47899		Accounting		Vice President
+Mark Jones		39119		IT				Programmer
+Joy Rogers		81774		Manufacturing	Engineer
+
+Process finished with exit code 0
+ */
